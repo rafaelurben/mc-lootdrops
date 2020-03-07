@@ -1,0 +1,33 @@
+{
+  "type": "chest",
+  "pools": [
+    {
+      "functions": [
+          {
+              "function":"enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+          },
+          {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+          }
+        ],
+      "rolls": 7,
+      "entries": [
+          {
+            "type": "minecraft:tag",
+            "name": "lootdrops:all",
+            "expand": true
+          }
+        ]
+      }
+  ]
+}
