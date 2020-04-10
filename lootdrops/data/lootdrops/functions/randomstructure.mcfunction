@@ -1,6 +1,6 @@
 execute store result score #randomstructure lootdrops run loot spawn ~ ~ ~ loot lootdrops:randomstructure
 execute at @s run summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,PersistenceRequired:1b,NoGravity:1b,Tags:["structurepos","structure"]}
-spreadplayers ~ ~ 100 250 false @e[tag=structure]
+spreadplayers ~ ~ 100 124 false @e[tag=structure]
 execute store result score posX lootdrops run data get entity @e[tag=structure,limit=1] Pos[0]
 execute store result score posY lootdrops run data get entity @e[tag=structure,limit=1] Pos[1]
 execute store result score posZ lootdrops run data get entity @e[tag=structure,limit=1] Pos[2]

@@ -1,5 +1,5 @@
 summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,ShowArms:0b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:0b,PersistenceRequired:1b,Tags:["lootdroppos"]}
-spreadplayers ~ ~ 200 200 false @e[tag=lootdroppos]
+spreadplayers ~ ~ 100 124 false @e[tag=lootdroppos]
 
 execute store result score posX lootdrops run data get entity @e[tag=lootdroppos,limit=1] Pos[0]
 execute store result score posY lootdrops run data get entity @e[tag=lootdroppos,limit=1] Pos[1]
